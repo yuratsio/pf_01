@@ -1,0 +1,149 @@
+// ==============================
+// about-page
+// ==============================
+// ------------------------------
+// top
+// ------------------------------
+.about-top {
+  top : 17%;
+  &__title {
+    font-size : 3.25rem;
+    letter-spacing : 0;
+    @include mq(lg) {
+      font-size : 4.5rem;
+    }  
+  }
+  &__sub-title {
+    @include mq(lg) {
+      font-size : 1.25rem;
+    }
+  }
+}
+// ------------------------------
+// mainvisual
+// ------------------------------
+.about-mainvisual {
+  height : 65vh;
+  @include mq(md) {
+    height : 60vh;
+  }
+  @include mq(lg) {
+    height : 50vh;
+  }  
+  &__img {
+    height : 55vh;
+    background-image : url(../img/about-us-img.jpg);
+    background-position : center 15%;
+    background-size : 1100px;
+    @include mq(md) {
+      height : 50vh;
+    }
+    @include mq(lg) {
+      height : 40vh;
+    }  
+  }
+  &__bg-color {
+    width : 50%;
+    height : 100%;
+  }
+}
+// ------------------------------
+// vision
+// ------------------------------
+.vision {
+  max-width : 415px;
+  margin : calc(65vh + 20px) auto 80px;
+  padding : 0 15px;
+  @include mq(sm) {
+    & .section-text {
+      font-size : .75rem;
+    }
+  }
+  @include mq(md) {
+    margin-top : calc(60vh + 40px);
+    margin-left : 150px;
+  }
+  @include mq(lg) {
+    margin-top : calc(50vh + 60px);
+    margin-left : 20%;
+  }  
+}
+// ------------------------------
+// message
+// ------------------------------
+.message {
+  margin-bottom : -20px;
+  @include mq(sm) {
+    & .section-text {
+      font-size : .75rem;
+    }
+  }  
+  &__img {
+    position : relative;
+    left : -15px;
+    z-index : 10;
+    max-width : 340px;
+    @include mq(md) {
+      width : 45%;
+      max-width : 420px;
+    }  
+  }
+  &__content {
+    position : relative;
+    top : -100px;
+    max-width : 500px;
+    margin : 0 0 0 auto;
+    padding : 125px 30px 80px;
+    background-color : #f0f0f0;
+    @include mq(md) {
+      max-width : 70%;
+    }
+  @include mq(lg) {
+      top : -150px;
+    }  
+  }
+  &__inner {
+    max-width : 400px;
+    margin : 0 auto;
+    & > p {
+      &:last-of-type {
+        margin-bottom : 0;
+      }
+    }
+  }
+}
+// ------------------------------
+// company
+// ------------------------------
+.company {
+  margin-bottom : 80px;
+  @include mq(lg) {
+    margin-bottom : 120px;
+  }  
+  &__list {
+    display : flex;
+    flex-wrap : wrap;
+    justify-content : flex-end;
+    margin-bottom : 40px;
+    border-top : solid 1px #ddd;
+    font-size : .875rem;
+    @include mq(lg) {
+      padding-left : 200px;
+    }  
+  }
+  &__title ,
+  &__item {
+    flex-basis : 50%;
+    padding : 20px 0;
+    border-bottom : solid 1px #ddd;
+    @include mq(md) {
+      flex-basis : 70%;
+    }  
+  }
+  &__title {
+    max-width : 200px;
+  }
+  & iframe {
+    filter : grayscale(1);
+  }
+}

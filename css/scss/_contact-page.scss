@@ -1,0 +1,136 @@
+// ==============================
+// contact-page
+// ==============================
+// ------------------------------
+// top
+// ------------------------------
+.contact-top {
+  top : 20%;
+  &__title {
+    font-size : 3.25rem;
+    letter-spacing : .063em;
+    @include mq(sm) {
+      font-size : 3rem;
+    }
+
+@include mq(lg) {
+      font-size : 4.5rem;
+    }  
+  }
+  &__sub-title {
+    @include mq(lg) {
+      font-size : 1.25rem;
+    }
+  }
+}
+
+// ------------------------------
+// mainvisual
+// ------------------------------
+.contact-mainvisual {
+  height : 55vh;
+  @include mq(md) {
+    height : 60vh;
+  }
+
+@include mq(lg) {
+    height : 50vh;
+  }  
+
+  &__img {
+    height : 40vh;
+    background-image : url(../img/contact-top-img.jpg);
+    background-position : center 40%;
+    @include mq(md) {
+      height : 50vh;
+    }
+
+@include mq(lg) {
+      height : 40vh;
+    }  
+  }
+  &__bg-color {
+    width : 50%;
+    height : 100%;
+  }
+}
+// ------------------------------
+// contact-form
+// ------------------------------
+.contact-form {
+  max-width : 700px;
+  margin : calc(50vh + 40px) auto 80px;
+  font-family : "Noto Sans JP", sans-serif;
+  @include mq(md) {
+    margin : calc(60vh + 40px) auto 200px;
+  }
+
+@include mq(lg) {
+    margin-top : calc(50vh + 40px);
+  }  
+
+  &__list {
+    margin-bottom : 65px;
+  }
+  &__title {
+    margin-bottom : 10px;
+    font-weight : bold;
+  }
+  &__radio-list {
+    margin-bottom : 35px;
+    @include mq(md) {
+      display : flex;
+      justify-content : flex-start;
+    }  
+  }
+  &__radio-button 
+  {margin-bottom : 5px;
+    @include mq(md) {
+      margin : 0 50px 0 0;
+    }  
+    &:last-of-type {
+      margin-bottom : 0;
+    }
+  }
+  &__item {
+    margin-bottom : 35px;
+    &:last-of-type {
+      margin-bottom : 0;
+    }
+    & > input ,
+    & > textarea {
+      width : 100%;
+      padding : 10px;
+      border : solid 1px #333;
+    }
+  }
+}
+.submit-button {
+  display : block;
+  width : 160px;
+  margin : 0 auto;
+  padding : 8px;
+  border : solid 2px currentColor;
+  background-color : #000;
+  color : #fafafa;
+  font-size : .875rem;
+  transition : background-color .2s ease, color .2s ease;
+  &:hover {
+    background-color : #fafafa;
+    color : #000;
+  }
+}
+.mandatory {
+  display : flex;
+  align-items : center;
+  position : relative;
+  &::after {
+    margin-left : 20px;
+    padding : 1px 5px;
+    background-color : #333;
+    color : #fafafa;
+    font-weight : normal;
+    font-size : .75rem;
+    content : "必須";
+  }
+}

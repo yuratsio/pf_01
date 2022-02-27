@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIGSMILE INC.</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&family=Noto+Sans+JP:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header id="header" class="header container">
+    <div class="header__inner">
+      <div class="site-title">
+        <img src="img/site-logo.png" alt="ロゴ">
+      </div>
+      <button class="hamburger-menu">
+        <div class="hamburger-menu__btn hamburger-menu__btn--open">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="hamburger-menu__btn hamburger-menu__btn--close">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="hamburger-menu__text"></div>
+        <div class="mask"></div>
+      </button>
+      <!-- /.hamburger-menu -->
+      <nav class="nav-menu">
+        <div class="nav-menu__inner">
+          <div class="nav-menu__logo">
+            <img src="img/logo.png" alt="">
+          </div>
+          <ul class="nav-menu__list">
+            <li class="nav-menu__item"><a href="index.html">ABOUT US</a></li>
+            <li class="nav-menu__item"><a href="index.html">WORKS</a></li>
+            <li class="nav-menu__item"><a href="index.html">CULTURE</a></li>
+            <li class="nav-menu__item"><a href="index.html">TOPICS</a></li>
+            <li class="nav-menu__item"><a href="index.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- /.header__inner wrapper -->
+  </header>
+  <!-- /#header.header -->
+
+  <div class="top contact-top">
+    <div class="top__inner">
+      <h1 class="top__title contact-top__title">
+        CONTACT
+      </h1>
+      <p class="top__sub-title contact-top__sub-title">
+        お問い合わせ
+      </p>
+    </div>
+  </div>
+  <!-- /.top -->
+
+  <div class="mainvisual contact-mainvisual">
+    <div class="mainvisual__img contact-mainvisual__img gray-filter"></div>
+    <div class="mainvisual__bg-color contact-mainvisual__bg-color"></div>
+  </div>
+  <!-- /.mainvisual -->
+
+  <main>
+    <div class="wrapper">
+      <div class="wrapper__inner">
+        <section class="contact-form">
+          <p class="section-text">
+            ご依頼やご相談についてのご質問やご要望がございましたら、下記フォームよりお気軽にお問い合わせください。送付いただいた内容を確認の上、担当者からご連絡させていただきます。
+          </p>
+          <form action="" class="contact-form__list">
+            <dl class="contact-form__list">
+              <dt class="contact-form__title mandatory">
+                  お問い合わせ種別
+              </dt>
+              <div class="contact-form__radio-list">
+                <dd class="contact-form__radio-button">
+                  <input type="radio" name="kinds" id="kinds1">
+                  <label for="kinds1">制作依頼</label>
+                </dd>
+                <dd class="contact-form__radio-button">
+                  <input type="radio" name="kinds" id="kinds2">
+                  <label for="kinds2">採用</label>
+                </dd>
+                <dd class="contact-form__radio-button">
+                  <input type="radio" name="kinds" id="kinds3">
+                  <label for="kinds3">IR</label>
+                </dd>
+                <dd class="contact-form__radio-button">
+                  <input type="radio" name="kinds" id="kinds4">
+                  <label for="kinds4">その他</label>
+                </dd>
+              </div>
+              <dt class="contact-form__title">
+                <label for="input-company">会社名・団体名</label>
+              </dt>
+              <dd class="contact-form__item">
+                <input type="text" name="company" id="input-company">
+              </dd>
+              <dt class="contact-form__title mandatory">
+                <label for="input-name">お名前</label>                
+              </dt>
+              <dd class="contact-form__item">
+                <input type="text" name="name" id="input-name">
+              </dd>
+              <dt class="contact-form__title mandatory">
+                <label for="input-mail">メールアドレス</label>
+              </dt>
+              <dd class="contact-form__item">
+                <input type="text" name="mail" id="input-mail">
+              </dd>
+              <dt class="contact-form__title">
+                <label for="input-phone">電話番号</label>
+              </dt>
+              <dd class="contact-form__item">
+                <input type="text" name="phone" id="input-phone">
+              </dd>
+              <dt class="contact-form__title mandatory">
+                <label for="input-contents">お問い合わせ内容</label>
+              </dt>
+              <dd class="contact-form__item">
+                <textarea name="contents" id="input-contents" rows="10"></textarea>
+              </dd>
+            </dl>
+            <button type="submit" value="send" class="submit-button">送信</button>
+          </form>
+        </section>
+        <!-- /.contact-form -->
+      </div>
+    </div>
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      ©2021 DIGSMILE INC.
+    </div>
+  </footer>
+  <!-- /#footer.footer -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
